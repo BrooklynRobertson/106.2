@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dashboard</class>
+ <widget class="QDialog" name="Dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>DASHBOARD MENU</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>100</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>MY COVID RECORDS</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="logo" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#logo {
+
+border-image:url(:/images/logo.png)
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonview">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>290</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>VIEW RECORDS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtontest">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>290</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TEST RESULT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonbook">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>290</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Book Appiontment</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtoncertificate">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>450</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Certificate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonrat">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>450</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rat Test</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQR">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>440</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>QR Code</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="viewrecords" native="true">
+      <property name="styleSheet">
+       <string notr="true">#viewrecords {
+border-image: url(:/images/viewrecords.png)
+
+}
+
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>180</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QWidget" name="testresult" native="true">
+      <property name="styleSheet">
+       <string notr="true">#testresult {
+border-image: url(:/images/testresult.png)
+
+}
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>180</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QWidget" name="book" native="true">
+      <property name="styleSheet">
+       <string notr="true">#book {
+border-image: url(:/images/book appiontment.png)
+
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>340</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QWidget" name="vaccine" native="true">
+      <property name="styleSheet">
+       <string notr="true">#vaccine {
+border-image: url(:/images/vaccine certifiacte.png)
+
+}
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>340</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QWidget" name="rat" native="true">
+      <property name="styleSheet">
+       <string notr="true">#rat {
+border-image: url(:/images/testresult.png)
+
+}
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>340</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QWidget" name="qrcode" native="true">
+    <property name="styleSheet">
+     <string notr="true">#qrcode {
+border-image: url(:/images/QRcode.png)
+
+}
+</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
