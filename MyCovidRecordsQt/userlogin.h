@@ -25,6 +25,7 @@ private:
     Ui::UserLogin *ui;
     FileManager fManager;
     bool signedIn = false;
+    bool isAdmin = false;
 };
 
 #endif // USERLOGIN_H

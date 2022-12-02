@@ -5,7 +5,6 @@
 #include <QMainWindow>
 #include "userlogin.h"
 #include "usersignup.h"
-#include "adminlogin.h"
 #include "dashboard.h"
 
 
@@ -36,7 +35,6 @@ private:
     Ui::MainWindow *ui;
     UserLogin *ul;
     UserSignup *us;
-    AdminLogin *al;
      Dashboard *db;
      FileManager fManager;
 

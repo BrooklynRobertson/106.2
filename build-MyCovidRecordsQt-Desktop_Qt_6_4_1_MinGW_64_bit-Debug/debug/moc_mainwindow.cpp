@@ -112,8 +112,6 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_pushButton_Login_clicked(); break;
         case 1: _t->on_pushButton_SignUp_clicked(); break;
-        case 2: _t->on_adminlogin_clicked(); break;
-        case 3: _t->on_adminregister_clicked(); break;
         default: ;
         }
     }

@@ -1,6 +1,7 @@
 #include "userlogin.h"
 #include <QPixmap>
 #include <QMessageBox>
+#include "dashboard.h"
 #include "ui_userlogin.h"
 #include <QLineEdit>
 
@@ -39,7 +40,23 @@ if(fileContent.empty()) {
         if(userEmail->text() == fileContent.at(i).at(0)) {
             if(userPassword->text() == fileContent.at(i).at(1)) {
                 signedIn = true;
-                QMessageBox::information(this, "Login", "Successfully loged in!!");
+                if(userEmail && "admin") {
+                    isAdmin = true;
+                }
+
+
+               if (isAdmin){
+                   QMessageBox::information(this, " Admin Login", "Successfully logged in as ADMIN");
+               }
+               else{
+                   QMessageBox::information(this, "User Login", "Successfully logged in as USER");
+               }
+               this->hide();
+               Dashboard dashBoard;
+              dashBoard.setModal(true);
+               dashBoard.exec();
+
+
             }
 
             else{
@@ -47,9 +64,7 @@ if(fileContent.empty()) {
             }
         }
 
-        else{
-            continue;
-            }
+
         }
         if(!signedIn) {
             QMessageBox::warning(this, "Login", "No user was found");

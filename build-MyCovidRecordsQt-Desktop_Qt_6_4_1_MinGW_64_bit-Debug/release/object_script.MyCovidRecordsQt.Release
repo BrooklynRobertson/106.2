@@ -1,11 +1,9 @@
-release/adminlogin.o
 release/dashboard.o
 release/filemanager.o
 release/main.o
 release/mainwindow.o
 release/userlogin.o
 release/usersignup.o
-release/moc_adminlogin.o
 release/moc_dashboard.o
 release/moc_mainwindow.o
 release/moc_userlogin.o

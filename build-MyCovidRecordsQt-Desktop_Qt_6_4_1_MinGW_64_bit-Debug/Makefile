@@ -188,6 +188,7 @@ Makefile: ../MyCovidRecordsQt/MyCovidRecordsQt.pro C:/Qt2/6.4.1/mingw_64/mkspecs
 		C:/Qt2/6.4.1/mingw_64/mkspecs/features/qt_config.prf \
 		C:/Qt2/6.4.1/mingw_64/mkspecs/win32-g++/qmake.conf \
 		C:/Qt2/6.4.1/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		C:/Qt2/6.4.1/mingw_64/mkspecs/features/exclusive_builds.prf \
 		C:/Qt2/6.4.1/mingw_64/mkspecs/features/toolchain.prf \
 		C:/Qt2/6.4.1/mingw_64/mkspecs/features/default_pre.prf \
@@ -217,7 +218,6 @@ Makefile: ../MyCovidRecordsQt/MyCovidRecordsQt.pro C:/Qt2/6.4.1/mingw_64/mkspecs
 		C:/Qt2/6.4.1/mingw_64/lib/Qt6Gui.prl \
 		C:/Qt2/6.4.1/mingw_64/lib/Qt6Core.prl \
 		C:/Qt2/6.4.1/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		C:/Qt2/6.4.1/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\MyCovidRecordsQt\MyCovidRecordsQt.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/spec_pre.prf:
@@ -338,6 +338,7 @@ C:/Qt2/6.4.1/mingw_64/mkspecs/features/qt_functions.prf:
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/qt_config.prf:
 C:/Qt2/6.4.1/mingw_64/mkspecs/win32-g++/qmake.conf:
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/exclusive_builds.prf:
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/toolchain.prf:
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/default_pre.prf:
@@ -367,7 +368,6 @@ C:/Qt2/6.4.1/mingw_64/lib/Qt6Widgets.prl:
 C:/Qt2/6.4.1/mingw_64/lib/Qt6Gui.prl:
 C:/Qt2/6.4.1/mingw_64/lib/Qt6Core.prl:
 C:/Qt2/6.4.1/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 C:/Qt2/6.4.1/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\MyCovidRecordsQt\MyCovidRecordsQt.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
