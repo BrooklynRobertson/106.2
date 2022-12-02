@@ -13,21 +13,18 @@ SOURCES += \
     filemanager.cpp \
     main.cpp \
     mainwindow.cpp \
-    userlogin.cpp \
-    usersignup.cpp
+    userlogin.cpp
 
 HEADERS += \
     dashboard.h \
     filemanager.h \
     mainwindow.h \
-    userlogin.h \
-    usersignup.h
+    userlogin.h
 
 FORMS += \
     dashboard.ui \
     mainwindow.ui \
-    userlogin.ui \
-    usersignup.ui
+    userlogin.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

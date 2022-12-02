@@ -43,7 +43,7 @@ public:
     QLineEdit *passField;
     QGroupBox *groupBox_2;
     QLabel *label_4;
-    QPushButton *pushButton_SignUp;
+    QPushButton *signupButton;
     QWidget *logo;
 
     void setupUi(QDialog *UserLogin)
@@ -53,7 +53,7 @@ public:
         UserLogin->resize(515, 464);
         label = new QLabel(UserLogin);
         label->setObjectName("label");
-        label->setGeometry(QRect(190, 170, 161, 41));
+        label->setGeometry(QRect(110, 170, 251, 41));
         label->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 127);\n"
 "font: 87 11pt \"Arial Black\";"));
         label_image1 = new QLabel(UserLogin);
@@ -66,8 +66,8 @@ public:
         loginButton->setObjectName("loginButton");
         loginButton->setGeometry(QRect(20, 180, 261, 25));
         loginButton->setStyleSheet(QString::fromUtf8("font: 87 9pt \"Arial Black\";\n"
-"color: rgb(255, 255, 255);\n"
-"background-color: rgb(0, 170, 0);"));
+"color: rgb(0, 0, 0);\n"
+"background-color: rgb(246, 184, 25);"));
         label_2 = new QLabel(groupBox);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(110, 20, 81, 31));
@@ -121,12 +121,12 @@ public:
         groupBox_2->setGeometry(QRect(240, 80, 271, 41));
         label_4 = new QLabel(groupBox_2);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(40, 10, 141, 20));
-        pushButton_SignUp = new QPushButton(groupBox_2);
-        pushButton_SignUp->setObjectName("pushButton_SignUp");
-        pushButton_SignUp->setGeometry(QRect(190, 10, 75, 23));
-        pushButton_SignUp->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"color: rgb(0, 85, 255);\n"
+        label_4->setGeometry(QRect(20, 10, 161, 20));
+        signupButton = new QPushButton(groupBox_2);
+        signupButton->setObjectName("signupButton");
+        signupButton->setGeometry(QRect(190, 10, 75, 23));
+        signupButton->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
 "font: 87 9pt \"Arial Black\";"));
         logo = new QWidget(UserLogin);
         logo->setObjectName("logo");
@@ -137,6 +137,7 @@ public:
 "}"));
 
         retranslateUi(UserLogin);
+        QObject::connect(signupButton, &QPushButton::clicked, UserLogin, qOverload<>(&QDialog::exec));
 
         QMetaObject::connectSlotsByName(UserLogin);
     } // setupUi
@@ -144,7 +145,7 @@ public:
     void retranslateUi(QDialog *UserLogin)
     {
         UserLogin->setWindowTitle(QCoreApplication::translate("UserLogin", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("UserLogin", "My Covid Record", nullptr));
+        label->setText(QCoreApplication::translate("UserLogin", "My Covid Records", nullptr));
         label_image1->setText(QString());
         groupBox->setTitle(QString());
         loginButton->setText(QCoreApplication::translate("UserLogin", "Log in", nullptr));
@@ -153,7 +154,7 @@ public:
         label_5->setText(QCoreApplication::translate("UserLogin", "Password", nullptr));
         groupBox_2->setTitle(QString());
         label_4->setText(QCoreApplication::translate("UserLogin", "Don't have an account?", nullptr));
-        pushButton_SignUp->setText(QCoreApplication::translate("UserLogin", "Sign up", nullptr));
+        signupButton->setText(QCoreApplication::translate("UserLogin", "Sign up", nullptr));
     } // retranslateUi
 
 };

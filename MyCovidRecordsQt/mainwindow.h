@@ -4,7 +4,6 @@
 #include "filemanager.h"
 #include <QMainWindow>
 #include "userlogin.h"
-#include "usersignup.h"
 #include "dashboard.h"
 
 
@@ -23,18 +22,11 @@ public:
 private slots:
     void on_pushButton_Login_clicked();
 
-    void on_pushButton_SignUp_clicked();
-
-    void on_adminlogin_clicked();
-
-    void on_adminregister_clicked();
-
 
 
 private:
     Ui::MainWindow *ui;
     UserLogin *ul;
-    UserSignup *us;
      Dashboard *db;
      FileManager fManager;
 

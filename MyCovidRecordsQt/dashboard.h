@@ -14,7 +14,8 @@ class Dashboard : public QDialog
 public:
     explicit Dashboard(QWidget *parent = nullptr);
     ~Dashboard();
-
+private slots:
+    void on_pushButtonLogout_clicked();
 
 
 private:

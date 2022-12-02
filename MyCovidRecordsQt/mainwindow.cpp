@@ -24,12 +24,3 @@ void MainWindow::on_pushButton_Login_clicked()
     ul->show();
 }
 
-
-void MainWindow::on_pushButton_SignUp_clicked()
-{
-    this->hide();
-    us = new UserSignup(this);
-    us->show();
-}
-
-

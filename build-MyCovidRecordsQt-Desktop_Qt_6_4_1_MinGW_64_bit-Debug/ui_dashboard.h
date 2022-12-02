@@ -28,18 +28,18 @@ public:
     QPushButton *pushButtontest;
     QPushButton *pushButtoncertificate;
     QPushButton *pushButtonQR;
-    QWidget *layoutWidget;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout;
     QWidget *viewrecords;
-    QWidget *layoutWidget1;
+    QWidget *layoutWidget2;
     QVBoxLayout *verticalLayout_2;
     QWidget *testresult;
-    QWidget *layoutWidget2;
+    QWidget *layoutWidget3;
     QVBoxLayout *verticalLayout_5;
     QWidget *vaccine;
     QSplitter *splitter;
     QWidget *qrcode;
-    QPushButton *pushButton;
+    QPushButton *pushButtonLogout;
     QLabel *label;
 
     void setupUi(QDialog *Dashboard)
@@ -71,13 +71,13 @@ public:
         pushButtonQR = new QPushButton(Dashboard);
         pushButtonQR->setObjectName("pushButtonQR");
         pushButtonQR->setGeometry(QRect(460, 280, 111, 24));
-        layoutWidget = new QWidget(Dashboard);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(70, 180, 111, 111));
-        verticalLayout = new QVBoxLayout(layoutWidget);
+        layoutWidget1 = new QWidget(Dashboard);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(70, 180, 111, 111));
+        verticalLayout = new QVBoxLayout(layoutWidget1);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        viewrecords = new QWidget(layoutWidget);
+        viewrecords = new QWidget(layoutWidget1);
         viewrecords->setObjectName("viewrecords");
         viewrecords->setStyleSheet(QString::fromUtf8("#viewrecords {\n"
 "border-image: url(:/images/viewrecords.png)\n"
@@ -88,13 +88,13 @@ public:
 
         verticalLayout->addWidget(viewrecords);
 
-        layoutWidget1 = new QWidget(Dashboard);
-        layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(200, 180, 111, 111));
-        verticalLayout_2 = new QVBoxLayout(layoutWidget1);
+        layoutWidget2 = new QWidget(Dashboard);
+        layoutWidget2->setObjectName("layoutWidget2");
+        layoutWidget2->setGeometry(QRect(200, 180, 111, 111));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget2);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        testresult = new QWidget(layoutWidget1);
+        testresult = new QWidget(layoutWidget2);
         testresult->setObjectName("testresult");
         testresult->setStyleSheet(QString::fromUtf8("#testresult {\n"
 "border-image: url(:/images/testresult.png)\n"
@@ -104,13 +104,13 @@ public:
 
         verticalLayout_2->addWidget(testresult);
 
-        layoutWidget2 = new QWidget(Dashboard);
-        layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(330, 180, 111, 111));
-        verticalLayout_5 = new QVBoxLayout(layoutWidget2);
+        layoutWidget3 = new QWidget(Dashboard);
+        layoutWidget3->setObjectName("layoutWidget3");
+        layoutWidget3->setGeometry(QRect(330, 180, 111, 111));
+        verticalLayout_5 = new QVBoxLayout(layoutWidget3);
         verticalLayout_5->setObjectName("verticalLayout_5");
         verticalLayout_5->setContentsMargins(0, 0, 0, 0);
-        vaccine = new QWidget(layoutWidget2);
+        vaccine = new QWidget(layoutWidget3);
         vaccine->setObjectName("vaccine");
         vaccine->setStyleSheet(QString::fromUtf8("#vaccine {\n"
 "border-image: url(:/images/vaccine certifiacte.png)\n"
@@ -132,9 +132,9 @@ public:
 "}\n"
 ""));
         splitter->addWidget(qrcode);
-        pushButton = new QPushButton(Dashboard);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(280, 370, 83, 29));
+        pushButtonLogout = new QPushButton(Dashboard);
+        pushButtonLogout->setObjectName("pushButtonLogout");
+        pushButtonLogout->setGeometry(QRect(280, 370, 83, 29));
         label = new QLabel(Dashboard);
         label->setObjectName("label");
         label->setGeometry(QRect(10, 90, 311, 41));
@@ -155,7 +155,7 @@ public:
         pushButtontest->setText(QCoreApplication::translate("Dashboard", "View Results", nullptr));
         pushButtoncertificate->setText(QCoreApplication::translate("Dashboard", "View Certificate", nullptr));
         pushButtonQR->setText(QCoreApplication::translate("Dashboard", "QR Code", nullptr));
-        pushButton->setText(QCoreApplication::translate("Dashboard", "Log Out", nullptr));
+        pushButtonLogout->setText(QCoreApplication::translate("Dashboard", "Log Out", nullptr));
         label->setText(QCoreApplication::translate("Dashboard", "My Covid Records", nullptr));
     } // retranslateUi
 
